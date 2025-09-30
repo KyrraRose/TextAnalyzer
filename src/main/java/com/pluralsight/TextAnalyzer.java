@@ -20,9 +20,10 @@ public class TextAnalyzer {
         String phraseNoSpace = userPhrase.replaceAll(removeSpace,"");
         int phraseCharNoSpace = phraseNoSpace.length();
 
+        int phraseArrayLen = phraseArray.length;
 
+        System.out.printf("That was delicious! Your phrase is %d characters long, %d if you don't count spaces, and has %d words!\nDo you want to know the first and last place a letter appears?\n",phraseCharLength,phraseCharNoSpace);
 
-        System.out.println(phraseCharLength++"\n"+phraseCharNoSpace+"\n"+phraseNoSpace);
 
 
     }
