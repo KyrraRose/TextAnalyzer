@@ -22,7 +22,24 @@ public class TextAnalyzer {
 
         int phraseArrayLen = phraseArray.length;
 
-        System.out.printf("That was delicious! Your phrase is %d characters long, %d if you don't count spaces, and has %d words!\nDo you want to know the first and last place a letter appears?\n",phraseCharLength,phraseCharNoSpace);
+        System.out.printf("That was delicious! Your phrase is %d characters long, %d if you don't count spaces, and has %d words!\nDo you want to know the first and last place a letter appears?\n(Yes/No)",phraseCharLength,phraseCharNoSpace);
+        String userAnswer = scanner.nextLine().trim();
+        if (userAnswer == "yes"|| userAnswer == "Yes"){
+            System.out.println("What yummy letter do you want to check?");
+            String checkChar = scanner.nextLine();
+            //String firstFound = userPhrase.indexOf[userChar];
+        }else{
+            System.out.println("Aw. Okay.");
+        }
+        System.out.println("Would you like to know if your phrase contains a certain word?\nI'm sure you've already forgotten what your phrase was.. heheheh.\n(Yes/No)");
+        if (userAnswer == "yes"|| userAnswer == "Yes"){
+            System.out.println("What crunchy munchy word do you want to check?");
+            String checkWord = scanner.nextLine().trim();
+            if (userPhrase.contains(checkWord)){
+
+            }
+        }
+
 
 
 
